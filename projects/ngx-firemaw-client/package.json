@@ -1,0 +1,9 @@
+{
+  "name": "ngx-firemaw-client",
+  "description": "Client-side Angular library for firemaw. A dynamic web entity manager",
+  "version": "1.4.0",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  }
+}

@@ -121,6 +121,41 @@
           }
         }
       }
+    },
+    "ngx-firemaw-client": {
+      "root": "projects/ngx-firemaw-client",
+      "sourceRoot": "projects/ngx-firemaw-client/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-firemaw-client/tsconfig.lib.json",
+            "project": "projects/ngx-firemaw-client/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-firemaw-client/src/test.ts",
+            "tsConfig": "projects/ngx-firemaw-client/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-firemaw-client/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-firemaw-client/tsconfig.lib.json",
+              "projects/ngx-firemaw-client/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "firemaw-angular"

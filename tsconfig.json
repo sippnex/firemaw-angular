@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-firemaw-client": [
+        "dist/ngx-firemaw-client"
+      ],
+      "ngx-firemaw-client/*": [
+        "dist/ngx-firemaw-client/*"
+      ]
+    }
   }
 }
